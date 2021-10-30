@@ -39,7 +39,8 @@ RUN mv openlogic-openjdk-11.0.8+10-linux-x64/ ./java/jdk-11.0.8+10
 #Install maven
 RUN apt install maven
 
-#Install Docker into docker 
+#Install Docker into docker This was commented because i was doing the bind mode for docker in docker run command without docker.io.
+#If you take a look for docker-compose, you will see the bind mode to docker volumes from your host in order to work with it in your new docker container.
 #RUN apt install docker.io -y
 #RUN docker --version
 #CMD nohup dockerd >/dev/null 2>&1 & sleep 10
