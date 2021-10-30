@@ -3,7 +3,7 @@
 # docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
 version: '3'
 services:
-  azureAgent:
+  agent:
     build: .
     env_file:
       - ./azureConfig.env
